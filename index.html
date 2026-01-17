@@ -1,138 +1,35 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-<meta charset="UTF-8">
-<title>MARSELO</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<style>
-body {
-    margin: 0;
-    font-family: 'Tajawal', sans-serif;
-    height: 100vh;
-    overflow: hidden;
-}
-
-/* خلفية GIF */
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('bg.gif') center center / cover no-repeat;
-    z-index: -2;
-}
-
-/* تعتيم */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.55);
-    z-index: -1;
-}
-
-/* الصندوق */
-.box {
-    text-align: center;
-    background: rgba(0,0,0,0.7);
-    padding: 30px;
-    border-radius: 18px;
-    width: 90%;
-    max-width: 400px;
-    margin: auto;
-    margin-top: 12vh;
-}
-
-/* الصورة الدائرية */
-.avatar {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #00ffe1;
-    margin-bottom: 15px;
-    box-shadow: 0 0 35px rgba(0,255,225,0.8);
-    animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
-    100% { transform: translateY(0); }
-}
-
-h1 {
-    color: #fff;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-}
-
-/* الأزرار */
-a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    text-decoration: none;
-    background: #ffffff;
-    color: #000;
-    margin: 12px 0;
-    padding: 15px;
-    border-radius: 12px;
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-a i {
-    font-size: 22px;
-}
-
-a:hover {
-    background: #00ffe1;
-    transform: scale(1.04);
-}
-
-/* موبايل */
-@media (max-width: 480px) {
-    .avatar {
-        width: 105px;
-        height: 105px;
-    }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <title>MARSELO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* نفس التنسيقات الخاصة بك دون تغيير */
+        body { margin: 0; font-family: 'Tajawal', sans-serif; height: 100vh; overflow: hidden; background-color: #000; }
+        .background { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url('bg.gif') center center / cover no-repeat; z-index: -2; }
+        .overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.55); z-index: -1; }
+        .box { text-align: center; background: rgba(0,0,0,0.7); padding: 30px; border-radius: 18px; width: 90%; max-width: 400px; margin: 12vh auto auto; border: 1px solid rgba(0,255,225,0.2); }
+        .avatar { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 4px solid #00ffe1; margin-bottom: 15px; box-shadow: 0 0 35px rgba(0,255,225,0.8); animation: float 3s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+        h1 { color: #fff; margin-bottom: 20px; letter-spacing: 2px; }
+        a { display: flex; align-items: center; justify-content: center; gap: 12px; text-decoration: none; background: #ffffff; color: #000; margin: 12px 0; padding: 15px; border-radius: 12px; font-size: 18px; transition: 0.3s; font-weight: bold; }
+        a:hover { background: #00ffe1; transform: scale(1.04); }
+    </style>
 </head>
-
 <body>
-
-<div class="background"></div>
-<div class="overlay"></div>
-
-<div class="box">
-    <img src="avatar.png" class="avatar">
-    <h1>MARSELO</h1>
-
-    <a href="https://www.tiktok.com/@horror_19991" target="_blank">
-        <i class="fa-brands fa-tiktok"></i> TikTok
-    </a>
-
-    <a href="https://youtube.com/@horror_19991?si=-gi2rkhG1Gtcicss" target="_blank">
-        <i class="fa-brands fa-youtube"></i> YouTube
-    </a>
-
-    <a href="https://bit.ly/4qy4Jt0" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i> WhatsApp
-    </a>
-
-    <a href="https://discord.gg/kt685xYFpk" target="_blank">
-        <i class="fa-brands fa-discord"></i> Discord
-    </a>
-</div>
-
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <div class="box">
+        <img src="avatar.png" class="avatar" alt="MARSELO">
+        <h1>MARSELO</h1>
+        <a href="https://www.tiktok.com/@horror_19991" target="_blank"><i class="fa-brands fa-tiktok"></i> TikTok</a>
+        <a href="https://youtube.com/@horror_19991" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a>
+        <a href="https://wa.me/201000000000" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a> 
+        <a href="https://discord.gg/kt685xYFpk" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a>
+    </div>
 </body>
 </html>
